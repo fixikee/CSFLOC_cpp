@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     std::string fileName = "";
     if (arguments.size() != 1)
     {
-        fileName = "uuf50-0100.cnf";
+        fileName = "uf75-02.cnf";
     }
     else
         fileName = arguments[0];
