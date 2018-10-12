@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1538587836 source:c:\csfloc\cpp\proba2\clauses.cpp
+	"Clauses.h"
+
+1538559066 c:\csfloc\cpp\proba2\clauses.h
+	<vector>
+	<cstdlib>
+	<stdio.h>
+
+1539167001 source:c:\csfloc\cpp\proba2\csfloc10.cpp
+	"Solver.h"
+	"DIMACSReader.h"
+	<time.h>
+
+1539168939 c:\csfloc\cpp\proba2\solver.h
+	"Clauses.h"
+	<vector>
+	<stdio.h>
+
+1539166169 c:\csfloc\cpp\proba2\dimacsreader.h
+	"Clauses.h"
+	<vector>
+	<string>
+
+1539166606 source:c:\csfloc\cpp\proba2\dimacsreader.cpp
+	"DIMACSReader.h"
+	<fstream>
+	<sstream>
+	<iostream>
+
+1539168939 source:c:\csfloc\cpp\proba2\solver.cpp
+	"Solver.h"
+
+1537316393 source:c:\csfloc\cpp\proba2\stdafx.cpp
+	"stdafx.h"
+
+1537316477 c:\csfloc\cpp\proba2\stdafx.h
+	"targetver.h"
+	<stdio.h>
+	<tchar.h>
+	<vector>
+
+1537316549 c:\csfloc\cpp\proba2\targetver.h
+	<SDKDDKVer.h>
+
