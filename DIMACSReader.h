@@ -11,12 +11,12 @@ class DIMACSReader {public:
 	std::vector< std::vector<int>* > cs;
 	std::vector<int> copyBuffer;
 
-	DIMACSReader(const std::string &fileName);
+	DIMACSReader(const std::string fileName);
 
 private:
-	void readPLine(const std::string &cnfClause);
+	void readPLine(const std::string cnfClause);
 	void initDataStructure();
-	void addCNFClause(const std::string &cnfClause);
+	void addCNFClause(const std::string cnfClause);
 };
 
 

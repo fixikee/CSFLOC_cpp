@@ -16,14 +16,6 @@ public:
 	virtual bool isBlack();
 	virtual bool subsumedBy(std::vector<bool> &counter);
 	static Clause *union_v2(Clause *a, Clause *b, int uptoIndex);
-	//std::string toString();
-
-	/*public boolean equals(Object o) {
-	if (o == null) return false;
-	Clause other = (Clause)o;
-	if (literals.length != other.literals.length) return false;
-	for (int i = 0; i<literals.length; i++) { if (literals[i] != other.literals[i]) return false; }
-	return true;*/
 };
 
 class ClauseList {
