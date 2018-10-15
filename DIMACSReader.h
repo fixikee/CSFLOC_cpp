@@ -33,7 +33,7 @@ class HighLevelReader {public:
 	virtual ClauseSet *getClauseSet();
 
 private:
-	void orderLiterals(std::vector< std::vector<int> *> &cs);
+	void orderLiterals();
 	void initDataStructure();
 	void fillDataStructure();
 };

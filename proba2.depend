@@ -43,3 +43,47 @@
 1537316549 c:\csfloc\cpp\proba2\targetver.h
 	<SDKDDKVer.h>
 
+1539384059 source:c:\csfloc\cpp\csfloc_cpp\clauses.cpp
+	"Clauses.h"
+
+1539384059 c:\csfloc\cpp\csfloc_cpp\clauses.h
+	<vector>
+	<cstdlib>
+	<stdio.h>
+
+1539384114 source:c:\csfloc\cpp\csfloc_cpp\csfloc10.cpp
+	"Solver.h"
+	"DIMACSReader.h"
+	<time.h>
+
+1539602193 c:\csfloc\cpp\csfloc_cpp\solver.h
+	"Clauses.h"
+	<vector>
+	<stdio.h>
+
+1539601704 c:\csfloc\cpp\csfloc_cpp\dimacsreader.h
+	"Clauses.h"
+	<vector>
+	<string>
+
+1539601722 source:c:\csfloc\cpp\csfloc_cpp\dimacsreader.cpp
+	"DIMACSReader.h"
+	<fstream>
+	<sstream>
+	<iostream>
+
+1539602193 source:c:\csfloc\cpp\csfloc_cpp\solver.cpp
+	"Solver.h"
+
+1539384059 source:c:\csfloc\cpp\csfloc_cpp\stdafx.cpp
+	"stdafx.h"
+
+1539384059 c:\csfloc\cpp\csfloc_cpp\stdafx.h
+	"targetver.h"
+	<stdio.h>
+	<tchar.h>
+	<vector>
+
+1539384059 c:\csfloc\cpp\csfloc_cpp\targetver.h
+	<SDKDDKVer.h>
+

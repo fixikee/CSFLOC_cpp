@@ -93,7 +93,7 @@ HighLevelReader::HighLevelReader(DIMACSReader *dr)
 {
     numberOfVariables = dr->numberOfVariables;
     cs = dr->cs;
-    orderLiterals(cs);
+    orderLiterals();
     initDataStructure();
     fillDataStructure();
 }
@@ -126,12 +126,12 @@ void HighLevelReader::fillDataStructure()
     }
 }
 
-void HighLevelReader::orderLiterals(std::vector< std::vector<int> *> &cs)
+void HighLevelReader::orderLiterals()
 {
 
-    for (int i = 0; i < cs.size(); i++)
+    for (int i = 0; i < HighLevelReader::cs.size(); i++)
     {
-        std::vector<int> *clause = cs.at(i);
+        std::vector<int> *clause = HighLevelReader::cs.at(i);
         int j = 1;
         int flag = 1;
         while (flag != 0)
