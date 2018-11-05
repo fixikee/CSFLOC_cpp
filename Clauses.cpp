@@ -161,15 +161,15 @@ void ClauseSet::addLastUnion_v3(Clause *c)
         return;
     if (c->lastLiteral > 0)
     {
-        if (lastUnionPos[index]->clauseList.size() == maxNumberOfLastUnion)
-            lastUnionPos[index]->clauseList.erase(lastUnionPos[index]->clauseList.begin()+(maxNumberOfLastUnion - 1));
-        lastUnionPos[index]->insert(c);
+        if (lastUnionPos[index].clauseList.size() == maxNumberOfLastUnion)
+            lastUnionPos[index].clauseList.erase(lastUnionPos[index].clauseList.begin()+(maxNumberOfLastUnion - 1));
+        lastUnionPos[index].insert(c);
     }
     else
     {
-        if (lastUnionNeg[index]->clauseList.size() == maxNumberOfLastUnion)
-            lastUnionNeg[index]->clauseList.erase(lastUnionNeg[index]->clauseList.begin()+(maxNumberOfLastUnion - 1));
-        lastUnionNeg[index]->insert(c);
+        if (lastUnionNeg[index].clauseList.size() == maxNumberOfLastUnion)
+            lastUnionNeg[index].clauseList.erase(lastUnionNeg[index].clauseList.begin()+(maxNumberOfLastUnion - 1));
+        lastUnionNeg[index].insert(c);
     }
 }
 
@@ -182,12 +182,13 @@ void ClauseSet::setEffectedClauses()
 
 void ClauseSet::setLastUnion()
 {
-    lastUnionNeg = std::vector<ClauseList*>(this->numberOfVariables + 1);
-    lastUnionPos = std::vector<ClauseList*>(this->numberOfVariables + 1);
+    const int numOfVariables = this->numberOfVariables + 1;
+    lastUnionNeg = ClauseList[numOfVariables];
+    lastUnionPos = new ClauseList[numOfVariables];
 
     for (int i = 0; i <= numberOfVariables; i++)
     {
-        lastUnionNeg[i] = new ClauseList();
-        lastUnionPos[i] = new ClauseList();
+        lastUnionNeg[i] = ClauseList();
+        lastUnionPos[i] = ClauseList();
     }
 }

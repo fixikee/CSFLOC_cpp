@@ -33,8 +33,10 @@ public:
 	std::vector< std::vector<Clause*> > clauseListOrderdByLastVarIndexNeg;
 	std::vector< std::vector<Clause*> > clauseListOrderdByLastVarIndexPos;
 	std::vector< std::vector<Clause*> > effectedClauses;
-	std::vector<ClauseList*> lastUnionNeg;
-	std::vector<ClauseList*> lastUnionPos;
+	//std::vector<ClauseList*> lastUnionNeg;
+	ClauseList *lastUnionNeg;
+	//std::vector<ClauseList*> lastUnionPos;
+	ClauseList *lastUnionPos;
 	std::vector< std::vector<int> *> cs;
 
 	ClauseSet(int numberOfVariables, int indexOfLastVariableOfBestBlackClause, Clause *bestBlackClause,

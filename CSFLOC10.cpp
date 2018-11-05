@@ -1,6 +1,7 @@
 #include "Solver.h"
 #include "DIMACSReader.h"
 #include <time.h>
+#include <thread>
 
 int main(int argc, char *argv[])
 {

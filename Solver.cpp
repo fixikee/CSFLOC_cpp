@@ -15,9 +15,9 @@ int Solver::usingBestClause_v4(ClauseSet *S, int index)
             return S->addEffectedClause(c);
     }
 
-    for (int i = 0; i < S->lastUnionPos[index]->clauseList.size(); i++)
+    for (int i = 0; i < S->lastUnionPos[index].clauseList.size(); i++)
     {
-        Clause *c = S->lastUnionPos[index]->clauseList.at(i);
+        Clause *c = S->lastUnionPos[index].clauseList.at(i);
         if (c->subsumedBy(Solver::counter))
             return S->addEffectedClause(c);
     }
@@ -35,9 +35,9 @@ int Solver::usingBestClause_v4(ClauseSet *S, int index)
                 return S->addEffectedClause(c);
         }
 
-        for (int i = 0; i < S->lastUnionNeg[index]->clauseList.size(); i++)
+        for (int i = 0; i < S->lastUnionNeg[index].clauseList.size(); i++)
         {
-            Clause *c = S->lastUnionNeg[index]->clauseList.at(i);
+            Clause *c = S->lastUnionNeg[index].clauseList.at(i);
 
             if (c->subsumedBy(Solver::counter))
                 return S->addEffectedClause(c);
